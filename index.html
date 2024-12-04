@@ -138,7 +138,7 @@
         <h2>Rail Fence Cipher</h2>
         <form id="railFenceForm">
             <label for="rfWord">Enter a word:</label>
-            <input type="text" id="rfWord" required>
+            <input type="text" id="rfWord" placeholder="PlainText (e.g., Security)" required>
             <label for="rfRows">Enter number of rows:</label>
             <input type="number" id="rfRows" min="2" value="2" required>
             <button type="button" onclick="encryptRailFence()">Encrypt</button>
@@ -152,9 +152,9 @@
         <h2>Playfair Cipher</h2>
         <form id="playfairForm">
             <label for="pfKeyword">Enter the Keyword:</label>
-            <input type="text" id="pfKeyword" required>
+            <input type="text" id="pfKeyword" placeholder="Keyword (e.g., Jasmin)" required>
             <label for="pfPlaintext">Enter the Text:</label>
-            <input type="text" id="pfPlaintext" required>
+            <input type="text" id="pfPlaintext" placeholder="PlainText (e.g., University)" required>
             <button type="button" onclick="handleEncryption()">Encrypt</button>
             <button type="button" onclick="handleDecryption()">Decrypt</button>
         </form>
@@ -166,9 +166,9 @@
         <h2>Caesar Cipher</h2>
         <form id="caesarForm">
             <label for="cWord">Enter a word:</label>
-            <input type="text" id="cWord" required>
+            <input type="text" id="cWord" placeholder="PlainText (e.g., Cyber Security)" required>
             <label for="ckey">Enter the key:</label>
-            <input type="number" id="ckey" required>
+            <input type="number" id="ckey" placeholder="Key (e.g., 7)" required>
             <button type="button" onclick="encryptCaesar()">Encrypt</button>
             <button type="button" onclick="decryptCaesar()">Decrypt</button>
         </form>
@@ -180,9 +180,9 @@
     <form id="rowform">
         <!-- Input fields for the word and key -->
         <label for="rWord">Enter a word:</label>
-        <input type="text" id="rWord" required>
+        <input type="text" id="rWord" placeholder="PlainText (e.g., Palestine)" required>
         <label for="rkey">Enter the key:</label>
-        <input type="number" id="rkey" required>
+        <input type="number" id="rkey" placeholder="Key (e.g., 231)" required>
 
         <!-- Buttons for encryption and decryption -->
         <button type="button" onclick="encryptRow()">Encrypt</button>
